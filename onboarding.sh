@@ -1,5 +1,11 @@
 #!/bin/bash
-$user =$1
+
+if [ $# -eq 0 ]; then
+  echo "Uso: $0 usuario"
+  exit 1
+fi
+
+user=$1
 
 # Agrega usuario nuevo
 sudo adduser $1
