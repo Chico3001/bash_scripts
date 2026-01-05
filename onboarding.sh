@@ -16,6 +16,7 @@ sudo chmod -R 600 /home/$user/.ssh
 
 # Agrega personalizacion
 echo "# General shortcut aliases" >> /home/$user/.bashrc.custom
+echo "alias ls='ls -lh --color=auto'" >> /home/$user/.bashrc.custom
 echo "alias cd..='cd ..'" >> /home/$user/.bashrc.custom
 echo "alias chwww='sudo chown www-data:www-data -R /var/www/'" >> /home/$user/.bashrc.custom
 echo "alias cdl='cd /var/log'" >> /home/$user/.bashrc.custom
